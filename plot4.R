@@ -11,8 +11,8 @@ plot(dat$DateTime, dat[,3], col='black', t='l', ylab="Global Active Power", xlab
 # 2
 plot(dat$DateTime, dat$Sub_metering_1, col='black', t='l', ylab="Energy sub metering", xlab = '')
 lines(dat$DateTime, dat$Sub_metering_2, col='red', t='l')
-lines(dat$DateTime, dat$Sub_metering_3, col='purple', t='l')
-legend("topright", legend=colnames(dat)[7:9], col=c('black', 'red', 'purple'), lty = 1)
+lines(dat$DateTime, dat$Sub_metering_3, col='blue', t='l')
+legend("topright", legend=colnames(dat)[7:9], col=c('black', 'red', 'blue'), lty = 1, bty='n')
 
 # 3
 plot(dat$DateTime, dat$Voltage, col='black', t='l', ylab="Voltage", xlab = 'datetime')

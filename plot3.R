@@ -6,6 +6,6 @@ dat = subset(dat, DateTime$year == 107 & DateTime$mon == 1 & (DateTime$mday==1 |
 png(file = "plot3.png", bg = "transparent", units = "px", width = 480, height = 480) 
 plot(dat$DateTime, dat$Sub_metering_1, col='black', t='l', ylab="Energy sub metering", xlab = '')
 lines(dat$DateTime, dat$Sub_metering_2, col='red', t='l')
-lines(dat$DateTime, dat$Sub_metering_3, col='purple', t='l')
-legend("topright", legend=colnames(dat)[7:9], col=c('black', 'red', 'purple'), lty = 1)
+lines(dat$DateTime, dat$Sub_metering_3, col='blue', t='l')
+legend("topright", legend=colnames(dat)[7:9], col=c('black', 'red', 'blue'), lty = 1)
 dev.off()
